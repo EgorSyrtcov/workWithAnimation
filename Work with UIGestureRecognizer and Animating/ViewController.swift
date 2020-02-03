@@ -37,6 +37,7 @@ class ViewController: UIViewController {
     }
     
    private func setupSwipeRecognizer() {
+    
     let swipeRight = UISwipeGestureRecognizer(target: self, action: #selector(self.swipeGestRecognizer))
     swipeRight.direction = UISwipeGestureRecognizer.Direction.right
     mainImageView?.addGestureRecognizer(swipeRight)
@@ -49,7 +50,6 @@ class ViewController: UIViewController {
     mainImageView?.addGestureRecognizer(longPress)
     
     }
-    
     
     @IBAction func swipeGestRecognizer(_ sender: UISwipeGestureRecognizer) {
         
@@ -65,7 +65,6 @@ class ViewController: UIViewController {
         }
     }
     
-    
     @IBAction func longPressed(_ sender: UILongPressGestureRecognizer) {
         
         if sender.state == .began {
@@ -76,10 +75,8 @@ class ViewController: UIViewController {
     
     @IBAction func buttonNextVC(_ sender: Any) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let newController = storyBoard.instantiateViewController(withIdentifier: "secondVC") as! SecondViewController
-        self.present(newController, animated: true, completion: nil)
+        let newController = storyBoard.instantiateViewController(withIdentifier: "SecondViewController") as! SecondViewController
+        navigationController?.pushViewController(newController, animated: true)
     }
-    
-    
 }
 
