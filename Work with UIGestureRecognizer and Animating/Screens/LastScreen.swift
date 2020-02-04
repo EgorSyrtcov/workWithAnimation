@@ -1,5 +1,5 @@
 //
-//  Transition Screen.swift
+//  LastScreen.swift
 //  Work with UIGestureRecognizer and Animating
 //
 //  Created by Egor Syrtcov on 2/4/20.
@@ -8,10 +8,9 @@
 
 import UIKit
 
-class TransitionScreens: UIViewController {
-
+class LastScreen: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
