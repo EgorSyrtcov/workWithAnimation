@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B5S-tE-00f">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="B5S-tE-00f">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -29,9 +27,8 @@
                                     <outletCollection property="gestureRecognizers" destination="Ctj-Oa-feJ" appends="YES" id="SXE-BB-8Cv"/>
                                 </connections>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4by-L6-VWm">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4by-L6-VWm">
                                 <rect key="frame" x="51" y="84" width="312" height="114"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажми на картинку" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zJZ-ur-ORE">
                                         <rect key="frame" x="0.0" y="0.0" width="312" height="52"/>
@@ -76,8 +73,10 @@
                             <constraint firstItem="IEV-Tx-vhy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="1rs-Xg-KFR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0pm-qf-Ivg" secondAttribute="bottom" constant="10" id="FEV-pu-wbj"/>
                             <constraint firstItem="IEV-Tx-vhy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IU4-In-z5P"/>
+                            <constraint firstItem="4by-L6-VWm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UmP-JA-lHo"/>
                             <constraint firstItem="0pm-qf-Ivg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dyh-pi-lqz"/>
                             <constraint firstItem="IEV-Tx-vhy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hnN-lD-bqa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="4by-L6-VWm" secondAttribute="top" constant="4" id="xfa-vA-cS5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
