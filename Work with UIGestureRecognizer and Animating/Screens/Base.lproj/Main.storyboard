@@ -70,12 +70,31 @@
                                     <action selector="buttonNextVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mxW-24-lw3"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wLe-S8-lYr">
+                                <rect key="frame" x="20" y="684" width="374" height="60"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="RHS-SP-CFd"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="143" id="sCE-yE-Fn2"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="zDl-EE-Hnc"/>
+                                </constraints>
+                                <state key="normal" title="Переход но новый экран ">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" red="0.06239362759" green="0.1914135277" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vnx-RS-X3n" kind="show" id="Dh2-i1-Waf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="IEV-Tx-vhy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="1rs-Xg-KFR"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0pm-qf-Ivg" secondAttribute="bottom" constant="10" id="FEV-pu-wbj"/>
                             <constraint firstItem="IEV-Tx-vhy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="IU4-In-z5P"/>
+                            <constraint firstItem="0pm-qf-Ivg" firstAttribute="top" secondItem="wLe-S8-lYr" secondAttribute="bottom" constant="48" id="J3s-DP-ucc"/>
+                            <constraint firstItem="wLe-S8-lYr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VLZ-np-h10"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wLe-S8-lYr" secondAttribute="trailing" constant="20" id="WCN-aR-gIU"/>
                             <constraint firstItem="0pm-qf-Ivg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dyh-pi-lqz"/>
                             <constraint firstItem="IEV-Tx-vhy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hnN-lD-bqa"/>
                         </constraints>
@@ -102,6 +121,14 @@
                 </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="138.61607142857142"/>
+        </scene>
+        <!--TransitionScreens-->
+        <scene sceneID="jqM-rK-qNz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="TransitionScreens" id="vnx-RS-X3n" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iby-IZ-T7e" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1648" y="228"/>
         </scene>
         <!--DetailViewController-->
         <scene sceneID="cPn-41-PBT">
@@ -172,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cBP-xw-YP8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1915.9420289855075" y="138.61607142857142"/>
+            <point key="canvasLocation" x="2261" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uAS-Gs-Nct">
