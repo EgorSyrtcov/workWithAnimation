@@ -18,30 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvu-hq-6Do">
-                                <rect key="frame" x="107" y="393" width="200" height="120"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <gestureRecognizers/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="120" id="aFR-Ks-gxg"/>
-                                    <constraint firstAttribute="width" constant="200" id="ffp-KA-VBK"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="Button 2">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="tapButton2:" destination="d7C-wD-yAx" eventType="touchUpInside" id="ejS-hv-IgN"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KX1-cX-rMj">
-                                <rect key="frame" x="127" y="413" width="160" height="80"/>
+                                <rect key="frame" x="218" y="408" width="162" height="87"/>
                                 <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="160" id="8HQ-r7-K0Q"/>
-                                    <constraint firstAttribute="height" constant="80" id="oFX-Xh-3J3"/>
+                                    <constraint firstAttribute="width" constant="162" id="8HQ-r7-K0Q"/>
+                                    <constraint firstAttribute="height" constant="87" id="oFX-Xh-3J3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Button 1">
@@ -52,14 +35,31 @@
                                     <action selector="tapButton1:" destination="d7C-wD-yAx" eventType="touchUpInside" id="SVU-IU-126"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvu-hq-6Do">
+                                <rect key="frame" x="54" y="409" width="191" height="87"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="aFR-Ks-gxg"/>
+                                    <constraint firstAttribute="width" constant="191" id="ffp-KA-VBK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="Button 2">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapButton2:" destination="d7C-wD-yAx" eventType="touchUpInside" id="ejS-hv-IgN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.13088402430000001" green="1" blue="0.070983554530000006" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="bvu-hq-6Do" firstAttribute="centerX" secondItem="ENH-8U-REx" secondAttribute="centerX" id="8Rz-t1-wrx"/>
-                            <constraint firstItem="KX1-cX-rMj" firstAttribute="centerY" secondItem="bvu-hq-6Do" secondAttribute="centerY" id="D3M-10-pM1"/>
-                            <constraint firstItem="KX1-cX-rMj" firstAttribute="centerX" secondItem="bvu-hq-6Do" secondAttribute="centerX" id="sYp-ds-rA6"/>
-                            <constraint firstItem="bvu-hq-6Do" firstAttribute="centerX" secondItem="6Pg-iV-vXy" secondAttribute="centerX" id="x4f-dG-igk"/>
+                            <constraint firstItem="bvu-hq-6Do" firstAttribute="centerX" secondItem="ENH-8U-REx" secondAttribute="centerX" constant="-57.5" id="8Rz-t1-wrx"/>
+                            <constraint firstItem="KX1-cX-rMj" firstAttribute="centerY" secondItem="bvu-hq-6Do" secondAttribute="centerY" constant="-1" id="D3M-10-pM1"/>
+                            <constraint firstItem="KX1-cX-rMj" firstAttribute="centerX" secondItem="bvu-hq-6Do" secondAttribute="centerX" constant="149.5" id="sYp-ds-rA6"/>
+                            <constraint firstItem="bvu-hq-6Do" firstAttribute="centerX" secondItem="6Pg-iV-vXy" secondAttribute="centerX" constant="-57.5" id="x4f-dG-igk"/>
                             <constraint firstItem="bvu-hq-6Do" firstAttribute="centerY" secondItem="6Pg-iV-vXy" secondAttribute="centerY" id="zJB-cw-VIF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Pg-iV-vXy"/>
